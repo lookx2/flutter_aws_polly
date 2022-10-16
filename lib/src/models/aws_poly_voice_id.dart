@@ -180,7 +180,7 @@ enum AWSPolyVoiceId {
   /// Standard Voice: `Yes`
   ///
   hans,
-
+  hiujin,
   /// Language: `Portuguese (European) (pt-PT)`
   /// Name: `Ines`
   /// Gender: `Female`
