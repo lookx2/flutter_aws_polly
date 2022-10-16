@@ -32,6 +32,7 @@ extension AWSPollyVoiceId {
             case "giorgio": return .giorgio
             case "gwyneth": return .gwyneth
             case "hans": return .hans
+            case "hiujin": return .hiujin
             case "ines": return .ines
             case "ivy": return .ivy
             case "jacek": return .jacek
