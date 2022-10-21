@@ -45,6 +45,7 @@ class AwsPollyPlugin: FlutterPlugin, MethodCallHandler {
                 val arguments = call.arguments as Map<String, String>
                 val poolId = arguments["poolId"] as String
                 val region = arguments["region"] as String
+                val numS = "String";
 
                 // Region of Amazon Polly.
                 val awsRegion = Regions.fromName(region)
