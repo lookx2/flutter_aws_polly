@@ -78,7 +78,6 @@ class AwsPollyPlugin: FlutterPlugin, MethodCallHandler {
                     .withText(input)
                     .withVoiceId(awsVoice)
                     .withOutputFormat(OutputFormat.Mp3)
-                    .withEngine(awsEngine)
 
                 ioScope.launch {
                     launch {
