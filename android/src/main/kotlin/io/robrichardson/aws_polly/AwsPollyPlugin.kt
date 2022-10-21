@@ -72,6 +72,7 @@ class AwsPollyPlugin: FlutterPlugin, MethodCallHandler {
                 }
 
                 val awsVoice = VoiceId.fromValue(capitalizedVoice)
+
                 // Create speech synthesis request.
                 val synthesizeSpeechPresignRequest = SynthesizeSpeechPresignRequest()
                     .withText(input)
