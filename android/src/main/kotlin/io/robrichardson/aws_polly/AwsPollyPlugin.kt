@@ -72,12 +72,12 @@ class AwsPollyPlugin: FlutterPlugin, MethodCallHandler {
                 }
 
                 val awsVoice = VoiceId.fromValue(capitalizedVoice)
-                val awsEngine = Engine.fromValue("Neural")
                 // Create speech synthesis request.
                 val synthesizeSpeechPresignRequest = SynthesizeSpeechPresignRequest()
                     .withText(input)
                     .withVoiceId(awsVoice)
                     .withOutputFormat(OutputFormat.Mp3)
+                    .withEngine(Engine.Neural)
 
                 ioScope.launch {
                     launch {
