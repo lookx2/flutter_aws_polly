@@ -63,7 +63,6 @@ class AwsPollyPlugin: FlutterPlugin, MethodCallHandler {
                 @Suppress("UNCHECKED_CAST")
                 val arguments = call.arguments as Map<String, String>
                 val input = arguments["input"] as String
-                val input1 = arguments["input"] as String
                 val voiceId = arguments["voiceId"] as String
 
                 val capitalizedVoice = voiceId.replaceFirstChar {
