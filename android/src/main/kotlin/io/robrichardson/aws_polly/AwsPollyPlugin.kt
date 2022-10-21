@@ -79,7 +79,6 @@ class AwsPollyPlugin: FlutterPlugin, MethodCallHandler {
                     .withVoiceId(awsVoice)
                     .withOutputFormat(OutputFormat.Mp3)
 
-
                 ioScope.launch {
                     launch {
                         // Get the presigned URL for synthesized speech audio stream.
