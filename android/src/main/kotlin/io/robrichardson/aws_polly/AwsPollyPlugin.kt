@@ -77,8 +77,8 @@ class AwsPollyPlugin: FlutterPlugin, MethodCallHandler {
                 val synthesizeSpeechPresignRequest = SynthesizeSpeechPresignRequest()
                     .withText(input)
                     .withVoiceId(awsVoice)
-                    .withOutputFormat(OutputFormat.Mp3)
                     .withEngine(Engine.Neural)
+                    .withOutputFormat(OutputFormat.Mp3)
 
                 ioScope.launch {
                     launch {
