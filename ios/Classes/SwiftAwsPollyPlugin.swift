@@ -51,6 +51,8 @@ public class SwiftAwsPollyPlugin: NSObject, FlutterPlugin {
 
       // Text to synthesize
       input.text = text
+      
+      input.engine = AWSPollyEngine.AWSPollyEngineNeural
 
       // We expect the output in MP3 format
       input.outputFormat = AWSPollyOutputFormat.mp3
